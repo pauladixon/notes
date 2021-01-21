@@ -18,7 +18,7 @@
 
     console.log(NaN == NaN)
     // → false
-    
+
 
 // operating on three values. It is written with a question mark and a colon, like this:
 
@@ -26,3 +26,18 @@
     // → 1
     console.log(false ? 1 : 2);
     // → 2
+
+    // This one is called the conditional operator (or sometimes just the ternary operator since it is the only such operator in the language). The value on the left of the question mark “picks” which of the other two values will come out. When it is true, it chooses the middle value, and when it is false, it chooses the value on the right.
+
+
+
+// short circuiting of logical operators
+
+    // The || operator, for example, will return the value to its left when that can be converted to true and will return the value on its right otherwise. This has the expected effect when the values are Boolean and does something analogous for values of other types.
+
+    console.log(null || "user")
+    // → user
+    console.log("Agnes" || "user")
+    // → Agnes
+
+    // We can use this functionality as a way to fall back on a default value. If you have a value that might be empty, you can put || after it with a replacement value. If the initial value can be converted to false, you’ll get the replacement instead. The rules for converting strings and numbers to Boolean values state that 0, NaN, and the empty string ("") count as false, while all the other values count as true. So 0 || -1 produces -1, and "" || "!?" yields "!?".
