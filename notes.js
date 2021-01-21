@@ -18,3 +18,11 @@
 
     console.log(NaN == NaN)
     // → false
+    
+
+// operating on three values. It is written with a question mark and a colon, like this:
+
+    console.log(true ? 1 : 2);
+    // → 1
+    console.log(false ? 1 : 2);
+    // → 2
