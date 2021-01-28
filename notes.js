@@ -66,3 +66,14 @@
 
     console.log(Math.min(2, 4) + 100);
     // → 102
+
+
+// control flow example 
+
+    // In the simple case, we want some code to be executed if, and only if, a certain condition holds. We might, for example, want to show the square of the input only if the input is actually a number.
+
+    let theNumber = Number(prompt("Pick a number"));
+    if (!Number.isNaN(theNumber)) {
+    console.log("Your number is the square root of " +
+                theNumber * theNumber);
+    }
