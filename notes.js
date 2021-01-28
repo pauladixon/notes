@@ -58,3 +58,11 @@
 
     console.log(Math.max(2, 4));
     // → 4
+
+
+// math min function 
+
+    // Here a call to Math.min, which is the opposite of Math.max, is used as part of a plus expression:
+
+    console.log(Math.min(2, 4) + 100);
+    // → 102
