@@ -124,3 +124,29 @@
         
         console.log(typeOfNaN(12));
         // → "12"
+
+
+// looping control flow with while
+
+    let number = 0;
+    while (number <= 12) {
+    console.log(number);
+    number = number + 2;
+    }
+    // → 0
+    // → 2
+    //   … etcetera
+
+    // For a program that calculates and shows the value of 2 to the 10th power, we use two bindings: one to keep track of our result and one to count how often we have multiplied this result by 2. The loop tests whether the second binding has reached 10 yet and, if not, updates both bindings.
+
+    let result = 1;
+    let counter = 0;
+    while (counter < 10) {
+    result = result * 2;
+    counter = counter + 1;
+    }
+    console.log(result);
+    // → 1024
+
+    
+//
