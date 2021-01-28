@@ -50,3 +50,11 @@
     let one = 1, two = 2;
     console.log(one + two);
     // → 3
+
+
+// math max function
+
+    // the function Math.max takes any amount of number arguments and gives back the greatest.
+
+    console.log(Math.max(2, 4));
+    // → 4
