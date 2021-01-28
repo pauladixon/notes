@@ -174,3 +174,19 @@
     // → 1024
 
 
+// illustration of break with for and if
+
+    for (let current = 20; ; current = current + 1) {
+        if (current % 7 == 0) {
+        console.log(current);
+        break;
+        }
+    }
+    // → 21
+
+    // The for construct in the example does not have a part that checks for the end of the loop. This means that the loop will never stop unless the break statement inside is executed.
+
+
+// note on continue
+
+    // The continue keyword is similar to break, in that it influences the progress of a loop. When continue is encountered in a loop body, control jumps out of the body and continues with the loop’s next iteration.
