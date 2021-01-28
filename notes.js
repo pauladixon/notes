@@ -148,5 +148,29 @@
     console.log(result);
     // → 1024
 
-    
-//
+
+// control flow with do loops
+
+    // A do loop is a control structure similar to a while loop. It differs only on one point: a do loop always executes its body at least once, and it starts testing whether it should stop only after that first execution. To reflect this, the test appears after the body of the loop.
+
+    let yourName;
+    do {
+    yourName = prompt("Who are you?");
+    } while (!yourName);
+    console.log(yourName);
+
+    // This program will force you to enter a name. It will ask again and again until it gets something that is not an empty string. Applying the ! operator will convert a value to Boolean type before negating it, and all strings except "" convert to true. This means the loop continues going round until you provide a non-empty name.
+
+
+// control flow with if loops
+
+    // This is the code that computes 210 using for instead of while:
+
+    let result = 1;
+    for (let counter = 0; counter < 10; counter = counter + 1) {
+    result = result * 2;
+    }
+    console.log(result);
+    // → 1024
+
+
