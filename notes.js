@@ -190,3 +190,29 @@
 // note on continue
 
     // The continue keyword is similar to break, in that it influences the progress of a loop. When continue is encountered in a loop body, control jumps out of the body and continues with the loop’s next iteration.
+
+
+// switch cases vs else if
+
+    // It is not uncommon for code to look like this:
+
+    if (x == "value1") action1();
+    else if (x == "value2") action2();
+    else if (x == "value3") action3();
+    else defaultAction();
+
+    // There is a construct called switch that is intended to express such a “dispatch” in a more direct way. Unfortunately, the syntax JavaScript uses for this (which it inherited from the C/Java line of programming languages) is somewhat awkward—a chain of if statements may look better. Here is an example:
+
+    switch (prompt("What is the weather like?")) {
+    case "rainy":
+        console.log("Remember to bring an umbrella.");
+        break;
+    case "sunny":
+        console.log("Dress lightly.");
+    case "cloudy":
+        console.log("Go outside.");
+        break;
+    default:
+        console.log("Unknown weather type!");
+        break;
+    }
