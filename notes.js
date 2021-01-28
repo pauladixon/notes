@@ -78,6 +78,8 @@
                 theNumber * theNumber);
     }
 
+    // The Number.isNaN function is a standard JavaScript function that returns true only if the argument it is given is NaN. The Number function happens to return NaN when you give it a string that doesn’t represent a valid number. Thus, the condition translates to “unless theNumber is not-a-number, do this”.
+
     // more Number.isNaN examples for reference
 
         let test1 = 12
