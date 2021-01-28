@@ -77,3 +77,48 @@
     console.log("Your number is the square root of " +
                 theNumber * theNumber);
     }
+
+    // more Number.isNaN examples for reference
+
+        let test1 = 12
+
+        if (isNaN(test1)){
+        console.log('yes')
+        } else console.log('no')
+        // → no
+        
+        
+        let test2 = NaN
+        
+        if (!isNaN(test2)){
+        console.log('yes')
+        } else console.log('no')
+        // → yes
+        
+        
+        let test3 = 12
+        
+        if (!Number.isNaN(test3)){
+        console.log('yes')
+        } else console.log('no')
+        // → yes
+        
+        
+        
+        function typeOfNaN(x) {
+        if (Number.isNaN(x)) {
+            return 'Number NaN';
+        }
+        if (isNaN(x)) {
+            return 'NaN';
+        } else return x
+        }
+        
+        console.log(typeOfNaN('100F'));
+        // → "NaN"
+        
+        console.log(typeOfNaN(NaN));
+        // → "Number NaN"
+        
+        console.log(typeOfNaN(12));
+        // → "12"
