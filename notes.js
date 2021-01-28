@@ -41,3 +41,12 @@
     // → Agnes
 
     // We can use this functionality as a way to fall back on a default value. If you have a value that might be empty, you can put || after it with a replacement value. If the initial value can be converted to false, you’ll get the replacement instead. The rules for converting strings and numbers to Boolean values state that 0, NaN, and the empty string ("") count as false, while all the other values count as true. So 0 || -1 produces -1, and "" || "!?" yields "!?".
+
+
+// comma separation in bindings
+
+    // A single let statement may define multiple bindings. The definitions must be separated by commas.
+
+    let one = 1, two = 2;
+    console.log(one + two);
+    // → 3
