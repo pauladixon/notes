@@ -232,3 +232,5 @@
     
     console.log(power(2, 10));
     // → 1024
+
+    // A return keyword without an expression after it will cause the function to return undefined.
