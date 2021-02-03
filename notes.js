@@ -294,3 +294,19 @@
 
     const square1 = (x) => { return x * x; };
     const square2 = x => x * x;
+
+
+// notes on call stacks
+
+    // The place where the computer stores the context of functions is the call stack. Every time a function is called, the current context is stored on top of this stack.
+
+    // Storing this stack requires space in the computer’s memory. When the stack grows too big, the computer will fail with a message like “out of stack space” or “too much recursion”. ie:
+
+    function chicken() {
+        return egg();
+    }
+    function egg() {
+        return chicken();
+    }
+    console.log(chicken() + " came first.");
+    // → ??
