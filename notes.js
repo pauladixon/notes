@@ -276,3 +276,21 @@
     }
 
     // They are conceptually moved to the top of their scope and can be used by all the code in that scope. This is sometimes useful because it offers the freedom to order code in a way that seems meaningful, without worrying about having to define all functions before they are used.
+
+
+// arrow functions
+
+    // the power of function translated to arrow function:
+
+    const power = (base, exponent) => {
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+          result *= base;
+        }
+        return result;
+    };
+
+    // and the following produce the same function:
+
+    const square1 = (x) => { return x * x; };
+    const square2 = x => x * x;
