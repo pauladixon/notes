@@ -257,3 +257,12 @@
     //   The code inside the ingredient function can see the factor binding from the outer function. But its local bindings, such as unit or ingredientAmount, are not visible in the outer function.
 
     // Each local scope can also see all the local scopes that contain it, and all scopes can see the global scope. This approach to binding visibility is called lexical scoping.
+
+    // A binding that holds a function is still just a regular binding and can, if not constant, be assigned a new value, like so:
+
+    let launchMissiles = function() {
+        missileSystem.launch("now");
+    };
+    if (safeMode) {
+        launchMissiles = function() {/* do nothing */};
+    }
