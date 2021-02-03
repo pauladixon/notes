@@ -220,10 +220,12 @@
 
 // function examples
 
+    // 2 to the power of 10 -- you don't have to do anything with the variable count while it's looping
+
     const power = function(base, exponent) {
         let result = 1;
         for (let count = 0; count < exponent; count++) {
-        result *= base;
+            result *= base;
         }
         return result;
     };
