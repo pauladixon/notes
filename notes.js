@@ -266,3 +266,11 @@
     if (safeMode) {
         launchMissiles = function() {/* do nothing */};
     }
+
+    // This does not work with function declarations however. Also declaration notation allows flow that is not top-to-bottom whereas binding notation requires top-to-bottom. Example:
+
+    console.log("The future says:", future());
+
+    function future() {
+        return "You'll never have flying cars";
+    }
