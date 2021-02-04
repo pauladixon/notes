@@ -295,7 +295,23 @@
     const square1 = (x) => { return x * x; };
     const square2 = x => x * x;
 
+    // looking at differences between:
 
+        // Define f to hold a function value
+            const f = function(a) {
+                console.log(a + 2);
+            };
+          
+        // Declare g to be a function
+            function g(a, b) {
+                return a * b * 3.5;
+            }
+          
+        // A less verbose function value
+            let h = a => a % 3;
+
+
+            
 // notes on call stacks
 
     // The place where the computer stores the context of functions is the call stack. Every time a function is called, the current context is stored on top of this stack.
@@ -389,5 +405,9 @@
     // Note that this program doesn’t necessarily find the shortest sequence of operations. It is satisfied when it finds any sequence at all.
 
 
-// growing functions
+// function side effects 
+
+    // A pure function is a specific kind of value-producing function that not only has no side effects but also doesn’t rely on side effects from other code—for example, it doesn’t read global bindings whose value might change.
+
+    // Still, there’s no need to feel bad when writing functions that are not pure or to wage a holy war to purge them from your code. Side effects are often useful. There’d be no way to write a pure version of console.log, for example, and console.log is good to have. Some operations are also easier to express in an efficient way when we use side effects, so computing speed can be a reason to avoid purity.
 
