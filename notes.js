@@ -385,5 +385,9 @@
 
     console.log(findSolution(24));
     // → (((1 * 3) + 5) * 3)
-    
+
     // Note that this program doesn’t necessarily find the shortest sequence of operations. It is satisfied when it finds any sequence at all.
+
+
+// growing functions
+
