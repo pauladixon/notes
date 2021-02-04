@@ -216,4 +216,3 @@
         console.log("Unknown weather type!");
         break;
     }
-?
