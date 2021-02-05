@@ -89,7 +89,7 @@
     // → 102
 
 
-// type of method
+// typeof / uppercase / lowercase methods
 
     // Both string and array values contain, in addition to the length property, a number of properties that hold function values.
 
