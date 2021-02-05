@@ -52,22 +52,6 @@
     // → 3
 
 
-// math max function
-
-    // the function Math.max takes any amount of number arguments and gives back the greatest.
-
-    console.log(Math.max(2, 4));
-    // → 4
-
-
-// math min function 
-
-    // Here a call to Math.min, which is the opposite of Math.max, is used as part of a plus expression:
-
-    console.log(Math.min(2, 4) + 100);
-    // → 102
-
-
 // control flow example 
 
     // In the simple case, we want some code to be executed if, and only if, a certain condition holds. We might, for example, want to show the square of the input only if the input is actually a number.
