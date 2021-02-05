@@ -54,3 +54,6 @@
     // → {a: 1, b: 3, c: 4}
 
     // Arrays, then, are just a kind of object specialized for storing sequences of things. If you evaluate typeof [], it produces "object".
+
+
+// mutability in objects
