@@ -11,7 +11,7 @@
     // So if you know that the property you are interested in is called color, you say value.color. If you want to extract the property named by the value held in the binding i, you say value[i]. Property names are strings. They can be any string, but the dot notation works only with names that look like valid binding names. 
 
     // application in an object:
-    
+
     let day1 = {
         squirrel: false,
         events: ["work", "touched tree", "pizza", "running"]
@@ -23,3 +23,19 @@
       day1.wolf = false;
       console.log(day1.wolf);
       // → false
+
+
+// operators
+
+    // The delete operator is a unary operator that, when applied to an object property, will remove the named property from the object. This is not a common thing to do, but it is possible.
+
+    let anObject = {left: 1, right: 2};
+    console.log(anObject.left);
+    // → 1
+    delete anObject.left;
+    console.log(anObject.left);
+    // → undefined
+    console.log("left" in anObject);
+    // → false
+    console.log("right" in anObject);
+    // → true
