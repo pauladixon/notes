@@ -111,7 +111,7 @@
     // → 5
     console.log(sequence);
     // → [1, 2, 3, 4]
-    
+
     // The push method adds values to the end of an array, and the pop method does the opposite, removing the last value in the array and returning it.
 
-    // These somewhat silly names are the traditional terms for operations on a stack. A stack, in programming, is a data structure that allows you to push values into it and pop them out again in the opposite order so that the thing that was added last is removed first. These are common in programming—you might remember the function call stack from the previous chapter, which is an instance of the same idea.
+    // These names are the traditional terms for operations on a stack. A stack, in programming, is a data structure that allows you to push values into it and pop them out again in the opposite order so that the thing that was added last is removed first. These are common in programming—you might remember the function call stack from the previous chapter, which is an instance of the same idea.
