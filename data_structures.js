@@ -25,7 +25,7 @@
       // → false
 
 
-// operators
+// object operators
 
     // The delete operator is a unary operator that, when applied to an object property, will remove the named property from the object. This is not a common thing to do, but it is possible.
 
@@ -39,3 +39,16 @@
     // → false
     console.log("right" in anObject);
     // → true
+
+    // The binary in operator, when applied to a string and an object, tells you whether that object has a property with that name. The difference between setting a property to undefined and actually deleting it is that, in the first case, the object still has the property (it just doesn’t have a very interesting value), whereas in the second case the property is no longer present and in will return false.
+
+    // To find out what properties an object has, you can use the Object.keys function. You give it an object, and it returns an array of strings—the object’s property names.
+
+    console.log(Object.keys({x: 0, y: 0, z: 2}));
+    // → ["x", "y", "z"]
+    // There’s an Object.assign function that copies all properties from one object into another.
+
+    let objectA = {a: 1, b: 2};
+    Object.assign(objectA, {b: 3, c: 4});
+    console.log(objectA);
+    // → {a: 1, b: 3, c: 4}
