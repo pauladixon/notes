@@ -87,3 +87,14 @@
 
     console.log(Math.min(2, 4) + 100);
     // → 102
+
+
+// type of method
+
+    // Both string and array values contain, in addition to the length property, a number of properties that hold function values.
+
+    let doh = "Doh";
+    console.log(typeof doh.toUpperCase);
+    // → function
+    console.log(doh.toUpperCase());
+    // → DOH
