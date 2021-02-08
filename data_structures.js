@@ -82,3 +82,23 @@
     score = {visitors: 1, home: 1};
 
     // When you compare objects with JavaScript’s == operator, it compares by identity: it will produce true only if both objects are precisely the same value. Comparing different objects will return false, even if they have identical properties. There is no “deep” comparison operation built into JavaScript, which compares objects by contents, but it is possible to write it yourself
+
+
+// object log example with shorthand declaration
+
+    let journal = [];
+
+    function addEntry(events, squirrel) {
+    journal.push({events, squirrel});
+    }
+
+    // Note that the object added to the journal looks a little odd. Instead of declaring properties like events: events, it just gives a property name. This is shorthand that means the same thing—if a property name in brace notation isn’t followed by a value, its value is taken from the binding with the same name.
+
+    // So then, every evening at 10 p.m.—or sometimes the next morning, after climbing down from the top shelf of his bookcase—Jacques records the day.
+
+    addEntry(["work", "touched tree", "pizza", "running",
+            "television"], false);
+    addEntry(["work", "ice cream", "cauliflower", "lasagna",
+            "touched tree", "brushed teeth"], false);
+    addEntry(["weekend", "cycling", "break", "peanuts",
+            "beer"], true);
