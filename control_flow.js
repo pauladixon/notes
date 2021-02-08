@@ -169,3 +169,18 @@
     }
 
     // this works not only for arrays, but also for strings and some other data strucutres
+
+    function journalEvents(journal) {
+        let events = [];
+        for (let entry of journal) {
+          for (let event of entry.events) {
+            if (!events.includes(event)) {
+              events.push(event);
+            }
+          }
+        }
+        return events;
+      }
+      
+    console.log(journalEvents(JOURNAL));
+    // → ["carrot", "exercise", "weekend", "bread", …]
