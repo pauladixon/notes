@@ -72,3 +72,11 @@
     // → 15
     console.log(object3.value);
     // → 10
+
+    // Similarly, though a const binding to an object can itself not be changed and will continue to point at the same object, the contents of that object might change.
+
+    const score = {visitors: 0, home: 0};
+    // This is okay
+    score.visitors = 1;
+    // This isn't allowed
+    score = {visitors: 1, home: 1};
