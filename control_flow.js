@@ -167,3 +167,5 @@
     for (let entry of journal){
         console.log(`${entry.events.length} events`)
     }
+
+    // this works not only for arrays, but also for strings and some other data strucutres
