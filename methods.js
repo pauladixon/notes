@@ -115,3 +115,19 @@
     // The push method adds values to the end of an array, and the pop method does the opposite, removing the last value in the array and returning it.
 
     // These names are the traditional terms for operations on a stack. A stack, in programming, is a data structure that allows you to push values into it and pop them out again in the opposite order so that the thing that was added last is removed first. These are common in programming—you might remember the function call stack from the previous chapter, which is an instance of the same idea.
+
+
+// shift and unshift
+
+    // The corresponding methods for adding and removing things at the start of an array are called unshift and shift.
+
+    let todoList = [];
+    function remember(task) {
+        todoList.push(task);
+    }
+    function getTask() {
+        return todoList.shift();
+    }
+    function rememberUrgently(task) {
+        todoList.unshift(task);
+    }
