@@ -131,3 +131,15 @@
     function rememberUrgently(task) {
         todoList.unshift(task);
     }
+
+
+// indexOf
+
+    // To search for a specific value, arrays provide an indexOf method. The method searches through the array from the start to the end and returns the index at which the requested value was found—or -1 if it wasn’t found. To search from the end instead of the start, there’s a similar method called lastIndexOf.
+
+    console.log([1, 2, 3, 2, 1].indexOf(2));
+    // → 1
+    console.log([1, 2, 3, 2, 1].lastIndexOf(2));
+    // → 3
+
+    // Both indexOf and lastIndexOf take an optional second argument that indicates where to start searching.
