@@ -153,3 +153,17 @@
         console.log("Unknown weather type!");
         break;
     }
+
+
+// for let of - instead of more complex for loop
+
+    // instead of
+
+    for (let i=0; i<journal.length; i++){
+        let entry = journal[i]
+        // etc
+    }
+
+    for (let entry of journal){
+        console.log(`${entry.events.length} events`)
+    }
