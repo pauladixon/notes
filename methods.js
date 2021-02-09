@@ -237,3 +237,9 @@
     let numbers = [5, 1, 7];
     console.log(max(...numbers));
     // → 7
+
+    let words = ["never", "fully"];
+    console.log(["will", ...words, "understand"]);
+    // → ["will", "never", "fully", "understand"]
+
+
