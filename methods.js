@@ -214,3 +214,20 @@
     // → 3
     console.log(string[1]);
     // → b
+
+
+// rest parameters
+
+    // Math.max computes the maximum of all the arguments it is given.
+
+    // To write such a function, you put three dots before the function’s last parameter, like this:
+
+    function max(...numbers) {
+    let result = -Infinity;
+    for (let number of numbers) {
+        if (number > result) result = number;
+    }
+    return result;
+    }
+    console.log(max(4, 1, 9, -2));
+    // → 9
