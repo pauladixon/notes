@@ -102,3 +102,34 @@
             "touched tree", "brushed teeth"], false);
     addEntry(["weekend", "cycling", "break", "peanuts",
             "beer"], true);
+
+
+// destructuring objects and arrays
+
+    // instead of referencing a defined array like this:
+
+    function phi(table) {
+        return (table[3] * table[0] - table[2] * table[1]) /
+          Math.sqrt((table[2] + table[3]) *
+                    (table[0] + table[1]) *
+                    (table[1] + table[3]) *
+                    (table[0] + table[2]));
+    }
+    
+    // we can name the variables to bind to the array elements as an array itself in the parameters of the function:
+
+    function phi([n00, n01, n10, n11]) {
+        return (n11 * n00 - n10 * n01) /
+          Math.sqrt((n10 + n11) * (n00 + n01) *
+                    (n01 + n11) * (n00 + n10));
+    }
+
+    // -- If you know the value you are binding is an array, you can use square brackets to “look inside” of the value, binding its contents.
+
+    // A similar trick works for objects, using braces instead of square brackets.
+
+    let {name} = {name: "Faraji", age: 23};
+    console.log(name);
+    // → Faraji
+
+    // Note that if you try to destructure null or undefined, you get an error, much as you would if you directly try to access a property of those values.
