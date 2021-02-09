@@ -132,4 +132,4 @@
     console.log(name);
     // → Faraji
 
-    // Note that if you try to destructure null or undefined, you get an error, much as you would if you directly try to access a property of those values
+    // Note that if you try to destructure null or undefined, you get an error, much as you would if you directly try to access a property of those values.
