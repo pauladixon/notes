@@ -199,8 +199,18 @@
     // → ["Secretarybirds", "specialize", "in", "stomping"]
     console.log(words.join(". "));
     // → Secretarybirds. specialize. in. stomping
-    
+
     // A string can be repeated with the repeat method, which creates a new string containing multiple copies of the original string, glued together.
 
     console.log("LA".repeat(3));
     // → LALALA
+
+    // assessing strings:
+
+    // We have already seen the string type’s length property. Accessing the individual characters in a string looks like accessing array elements (with a caveat that we’ll discuss in Chapter 5).
+
+    let string = "abc";
+    console.log(string.length);
+    // → 3
+    console.log(string[1]);
+    // → b
