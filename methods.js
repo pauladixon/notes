@@ -171,3 +171,21 @@
     // → ["a", "b", "d", "e"]
 
     // If you pass concat an argument that is not an array, that value will be added to the new array as if it were a one-element array.
+
+
+// string methods
+        
+    console.log("coconuts".slice(4, 7));
+    // → nut
+    console.log("coconut".indexOf("u"));
+    // → 5
+    
+    // One difference is that a string’s indexOf can search for a string containing more than one character, whereas the corresponding array method looks only for a single element.
+
+    console.log("one two three".indexOf("ee"));
+    // → 11
+    
+    // The trim method removes whitespace (spaces, newlines, tabs, and similar characters) from the start and end of a string.
+
+    console.log("  okay \n ".trim());
+    // → okay
