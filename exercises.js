@@ -22,12 +22,24 @@
         
         // When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 
-        for (let i=0; i<100; i++){
+        // my solution
+
+        for (let i=1; i<=100; i++){
             if (i%15 === 0){
-                console.log('fizz buzz')
+                console.log('fizzbuzz')
             } else if (i%5 === 0){
                 console.log('buzz')
             } else if (i%3 === 0){
                 console.log('fizz')
             } else console.log(i)
         }
+
+        // ejs solution
+
+        for (let j=1; j<=100; j++){
+            let output = ''
+            if (j%3 == 0) output += 'fizz'
+            if (j%5 == 0) output += 'buzz'
+            console.log(output || j)
+        }
+
