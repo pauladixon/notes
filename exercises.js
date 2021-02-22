@@ -195,3 +195,11 @@
             // → 2
             console.log(countChar("kakkerlak", "k"));
             // → 4
+
+
+
+// data structures exercises
+
+    // sum of a range
+
+        
