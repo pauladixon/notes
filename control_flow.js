@@ -52,7 +52,7 @@
     // → 3
 
 
-// control flow example 
+// control flow examples
 
     // In the simple case, we want some code to be executed if, and only if, a certain condition holds. We might, for example, want to show the square of the input only if the input is actually a number.
 
@@ -61,6 +61,18 @@
     console.log("Your number is the square root of " +
                 theNumber * theNumber);
     }
+
+
+
+    const prefersDarkMode = true;
+
+    if (prefersDarkMode) {
+    console.log('dark mode set!');  
+    document.body.style.background = 'black';
+    }
+
+    console.log('light mode set!');
+    document.body.style.background = 'ghostwhite';
 
 
 // looping control flow with while
