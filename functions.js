@@ -143,18 +143,29 @@
 
     // For example, this version of power makes its second argument optional. If you don’t provide it or pass the value undefined, it will default to two, and the function will behave like square.
 
-    function power(base, exponent = 2) {
-    let result = 1;
-    for (let count = 0; count < exponent; count++) {
-        result *= base;
-    }
-    return result;
-    }
+        function power(base, exponent = 2) {
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+            result *= base;
+        }
+        return result;
+        }
 
-    console.log(power(4));
-    // → 16
-    console.log(power(2, 6));
-    // → 64
+        console.log(power(4));
+        // → 16
+        console.log(power(2, 6));
+        // → 64
+
+    // can limit the parameters inside a function to make sure results are within the scope desired, ie. significant digits
+
+        function convertTemperature(celsius, decimalPlaces = 1) {
+            // celsius to fahrenheit
+        //   decimalPlaces = decimalPlaces || 1;
+        const fahrenheit = celsius * 1.8 + 32;
+        return Number(fahrenheit.toFixed(decimalPlaces));
+        }
+        
+        console.log(convertTemperature(21, 0));
 
 
 // recursion
@@ -201,10 +212,9 @@
         function handleLikePost(step) {
             let likeCount = 0;
             return function addLike() {
-            likeCount += step;    
-            return likeCount;
+                likeCount += step
+                return likeCount
             }
-        //   addLike();
             console.log('like count:', likeCount);
         }
         
@@ -216,3 +226,19 @@
         
         // 1) Closures are a property of JavaScript functions
         // 2) Call function in different scope than where function was original defined
+
+
+        function countdown() {
+            let number = 10
+            return function removeNumber() {
+              number --
+              return number
+            }
+          }
+          
+          const countingDown = countdown();
+          
+          console.log(countingDown());
+          console.log(countingDown());
+          console.log(countingDown());
+          
