@@ -178,22 +178,22 @@
         // ejs solutions
 
             function countChar(string, ch) {
-                let counted = 0;
+                let counted = 0
                 for (let i = 0; i < string.length; i++) {
                 if (string[i] == ch) {
-                    counted += 1;
+                    counted += 1
                 }
                 }
                 return counted;
             }
             
             function countBs(string) {
-                return countChar(string, "B");
+                return countChar(string, "B")
             }
             
-            console.log(countBs("BBC"));
+            console.log(countBs("BBC"))
             // → 2
-            console.log(countChar("kakkerlak", "k"));
+            console.log(countChar("kakkerlak", "k"))
             // → 4
 
 
@@ -242,9 +242,9 @@
                 let array = []
             
                 if (step > 0) {
-                for (let i = start; i <= end; i += step) array.push(i);
+                for (let i = start; i <= end; i += step) array.push(i)
                 } else {
-                for (let i = start; i >= end; i += step) array.push(i);
+                for (let i = start; i >= end; i += step) array.push(i)
                 }
                 return array
             }
@@ -286,11 +286,11 @@
         // ejs solutions
 
             function reverseArray(array) {
-                let output = [];
+                let output = []
                 for (let i = array.length - 1; i >= 0; i--) {
-                output.push(array[i]);
+                output.push(array[i])
                 }
-                return output;
+                return output
             }
             
             function reverseArrayInPlace(array) {
