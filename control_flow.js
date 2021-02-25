@@ -10,8 +10,8 @@
 
 // The other operators shown all operated on two values, but typeof takes only one. Operators that use two values are called binary operators, while those that take one are called unary operators. The minus operator can be used both as a binary operator and as a unary operator.
 
-        console.log(- (10 - 2))
-        // → -8
+    console.log(- (10 - 2))
+    // → -8
 
 
 // There is only one value in JavaScript that is not equal to itself, and that is NaN (“not a number”).
@@ -85,25 +85,25 @@
 
     // For a program that calculates and shows the value of 2 to the 10th power, we use two bindings: one to keep track of our result and one to count how often we have multiplied this result by 2. The loop tests whether the second binding has reached 10 yet and, if not, updates both bindings.
 
-    let result = 1;
-    let counter = 0;
-    while (counter < 10) {
-    result = result * 2;
-    counter = counter + 1;
-    }
-    console.log(result);
-    // → 1024
+        let result = 1
+        let counter = 0
+        while (counter < 10) {
+            result = result * 2
+            counter = counter + 1
+        }
+        console.log(result)
+        // → 1024
 
 
 // control flow with do loops
 
     // A do loop is a control structure similar to a while loop. It differs only on one point: a do loop always executes its body at least once, and it starts testing whether it should stop only after that first execution. To reflect this, the test appears after the body of the loop.
 
-    let yourName;
-    do {
-    yourName = prompt("Who are you?");
-    } while (!yourName);
-    console.log(yourName);
+        let yourName
+        do {
+            yourName = prompt("Who are you?")
+        } while (!yourName)
+        console.log(yourName)
 
     // This program will force you to enter a name. It will ask again and again until it gets something that is not an empty string. Applying the ! operator will convert a value to Boolean type before negating it, and all strings except "" convert to true. This means the loop continues going round until you provide a non-empty name.
 
@@ -112,11 +112,11 @@
 
     // This is the code that computes 210 using for instead of while:
 
-    let result = 1;
+    let result = 1
     for (let counter = 0; counter < 10; counter = counter + 1) {
-    result = result * 2;
+        result = result * 2
     }
-    console.log(result);
+    console.log(result)
     // → 1024
 
 
@@ -124,8 +124,8 @@
 
     for (let current = 20; ; current = current + 1) {
         if (current % 7 == 0) {
-        console.log(current);
-        break;
+        console.log(current)
+        break
         }
     }
     // → 21
@@ -142,25 +142,25 @@
 
     // It is not uncommon for code to look like this:
 
-    if (x == "value1") action1();
-    else if (x == "value2") action2();
-    else if (x == "value3") action3();
-    else defaultAction();
+    if (x == "value1") action1()
+    else if (x == "value2") action2()
+    else if (x == "value3") action3()
+    else defaultAction()
 
     // There is a construct called switch that is intended to express such a “dispatch” in a more direct way. Unfortunately, the syntax JavaScript uses for this (which it inherited from the C/Java line of programming languages) is somewhat awkward—a chain of if statements may look better. Here is an example:
 
     switch (prompt("What is the weather like?")) {
     case "rainy":
-        console.log("Remember to bring an umbrella.");
-        break;
+        console.log("Remember to bring an umbrella.")
+        break
     case "sunny":
-        console.log("Dress lightly.");
+        console.log("Dress lightly.")
     case "cloudy":
-        console.log("Go outside.");
-        break;
+        console.log("Go outside.")
+        break
     default:
-        console.log("Unknown weather type!");
-        break;
+        console.log("Unknown weather type!")
+        break
     }
 
 
