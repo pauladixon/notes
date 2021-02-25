@@ -295,18 +295,18 @@
             
             function reverseArrayInPlace(array) {
                 for (let i = 0; i < Math.floor(array.length / 2); i++) {
-                let old = array[i];
-                array[i] = array[array.length - 1 - i];
-                array[array.length - 1 - i] = old;
+                let old = array[i]
+                array[i] = array[array.length - 1 - i]
+                array[array.length - 1 - i] = old
                 }
-                return array;
+                return array
             }
             
-            console.log(reverseArray(["A", "B", "C"]));
-            // → ["C", "B", "A"];
-            let arrayValue = [1, 2, 3, 4, 5];
-            reverseArrayInPlace(arrayValue);
-            console.log(arrayValue);
+            console.log(reverseArray(["A", "B", "C"]))
+            // → ["C", "B", "A"]
+            let arrayValue = [1, 2, 3, 4, 5]
+            reverseArrayInPlace(arrayValue)
+            console.log(arrayValue)
             // → [5, 4, 3, 2, 1]
 
 
@@ -325,7 +325,7 @@
                     rest: null
                 }
                 }
-            };
+            }
 
         // A nice thing about lists is that they can share parts of their structure. For example, if I create two new values {value: 0, rest: list} and {value: -1, rest: list} (with list referring to the binding defined earlier), they are both independent lists, but they share the structure that makes up their last three elements. The original list is also still a valid three-element list.
 
