@@ -209,10 +209,10 @@
 
     // We have already seen the string type’s length property. Accessing the individual characters in a string looks like accessing array elements (with a caveat that we’ll discuss in Chapter 5).
 
-    let string = "abc";
-    console.log(string.length);
+    let string = "abc"
+    console.log(string.length)
     // → 3
-    console.log(string[1]);
+    console.log(string[1])
     // → b
 
 
@@ -226,13 +226,13 @@
     // To write such a function, you put three dots before the function’s last parameter, like this:
 
     function max(...numbers) {
-        let result = -Infinity;
+        let result = -Infinity
         for (let number of numbers) {
-            if (number > result) result = number;
+            if (number > result) result = number
         }
-        return result;
+        return result
     }
-    console.log(max(4, 1, 9, -2));
+    console.log(max(4, 1, 9, -2))
     // → 9
 
     // You can use a similar three-dot notation to call a function with an array of arguments.
