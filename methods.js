@@ -237,12 +237,12 @@
 
     // You can use a similar three-dot notation to call a function with an array of arguments.
 
-    let numbers = [5, 1, 7];
-    console.log(max(...numbers));
+    let numbers = [5, 1, 7]
+    console.log(max(...numbers))
     // → 7
 
-    let words = ["never", "fully"];
-    console.log(["will", ...words, "understand"]);
+    let words = ["never", "fully"]
+    console.log(["will", ...words, "understand"])
     // → ["will", "never", "fully", "understand"]
 
 
@@ -251,23 +251,23 @@
     // Back to the Math object. If you need to do trigonometry, Math can help. It contains cos (cosine), sin (sine), and tan (tangent), as well as their inverse functions, acos, asin, and atan, respectively. The number π (pi)—or at least the closest approximation that fits in a JavaScript number—is available as Math.PI. There is an old programming tradition of writing the names of constant values in all caps.
 
     function randomPointOnCircle(radius) {
-    let angle = Math.random() * 2 * Math.PI;
-    return {x: radius * Math.cos(angle),
-            y: radius * Math.sin(angle)};
+        let angle = Math.random() * 2 * Math.PI
+        return {x: radius * Math.cos(angle),
+                y: radius * Math.sin(angle)}
     }
-    console.log(randomPointOnCircle(2));
+    console.log(randomPointOnCircle(2))
     // → {x: 0.3667, y: 1.966}
 
     // The previous example used Math.random. This is a function that returns a new pseudorandom number between zero (inclusive) and one (exclusive) every time you call it.
 
-    console.log(Math.random());
+    console.log(Math.random())
     // → 0.36993729369714856
-    console.log(Math.random());
+    console.log(Math.random())
     // → 0.727367032552138
-    console.log(Math.random());
+    console.log(Math.random())
     // → 0.40180766698904335
 
-    console.log(Math.floor(Math.random() * 10));
+    console.log(Math.floor(Math.random() * 10))
     // → 2
 
     // Multiplying the random number by 10 gives us a number greater than or equal to 0 and below 10. Since Math.floor rounds down, this expression will produce, with equal chance, any number from 0 through 9.
