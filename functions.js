@@ -4,14 +4,14 @@
     // 2 to the power of 10 -- you don't have to do anything with the variable count while it's looping
 
     const power = function(base, exponent) {
-        let result = 1;
+        let result = 1
         for (let count = 0; count < exponent; count++) {
-            result *= base;
+            result *= base
         }
-        return result;
-    };
+        return result
+    }
     
-    console.log(power(2, 10));
+    console.log(power(2, 10))
     // → 1024
 
     // A return keyword without an expression after it will cause the function to return undefined.
@@ -21,19 +21,19 @@
 
     const hummus = function(factor) {
         const ingredient = function(amount, unit, name) {
-        let ingredientAmount = amount * factor;
+        let ingredientAmount = amount * factor
         if (ingredientAmount > 1) {
-            unit += "s";
+            unit += "s"
         }
-        console.log(`${ingredientAmount} ${unit} ${name}`);
-        };
-        ingredient(1, "can", "chickpeas");
-        ingredient(0.25, "cup", "tahini");
-        ingredient(0.25, "cup", "lemon juice");
-        ingredient(1, "clove", "garlic");
-        ingredient(2, "tablespoon", "olive oil");
-        ingredient(0.5, "teaspoon", "cumin");
-    };
+        console.log(`${ingredientAmount} ${unit} ${name}`)
+        }
+        ingredient(1, "can", "chickpeas")
+        ingredient(0.25, "cup", "tahini")
+        ingredient(0.25, "cup", "lemon juice")
+        ingredient(1, "clove", "garlic")
+        ingredient(2, "tablespoon", "olive oil")
+        ingredient(0.5, "teaspoon", "cumin")
+    }
 
     //   The code inside the ingredient function can see the factor binding from the outer function. But its local bindings, such as unit or ingredientAmount, are not visible in the outer function.
 
@@ -42,18 +42,18 @@
     // A binding that holds a function is still just a regular binding and can, if not constant, be assigned a new value, like so:
 
     let launchMissiles = function() {
-        missileSystem.launch("now");
-    };
+        missileSystem.launch("now")
+    }
     if (safeMode) {
-        launchMissiles = function() {/* do nothing */};
+        launchMissiles = function() {/* do nothing */}
     }
 
     // This does not work with function declarations however. Also declaration notation allows flow that is not top-to-bottom whereas binding notation requires top-to-bottom. Example:
 
-    console.log("The future says:", future());
+    console.log("The future says:", future())
 
     function future() {
-        return "You'll never have flying cars";
+        return "You'll never have flying cars"
     }
 
     // They are conceptually moved to the top of their scope and can be used by all the code in that scope. This is sometimes useful because it offers the freedom to order code in a way that seems meaningful, without worrying about having to define all functions before they are used.
@@ -64,17 +64,17 @@
     // the power of function translated to arrow function:
 
     const power = (base, exponent) => {
-        let result = 1;
+        let result = 1
         for (let count = 0; count < exponent; count++) {
-          result *= base;
+          result *= base
         }
-        return result;
-    };
+        return result
+    }
 
     // and the following produce the same function:
 
-    const square1 = (x) => { return x * x; };
-    const square2 = x => x * x;
+    const square1 = (x) => { return x * x; }
+    const square2 = x => x * x
 
     // looking at differences between:
 
