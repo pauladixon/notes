@@ -22,9 +22,9 @@
 
 // operating on three values. It is written with a question mark and a colon, like this:
 
-    console.log(true ? 1 : 2);
+    console.log(true ? 1 : 2)
     // → 1
-    console.log(false ? 1 : 2);
+    console.log(false ? 1 : 2)
     // → 2
 
     // This one is called the conditional operator (or sometimes just the ternary operator since it is the only such operator in the language). The value on the left of the question mark “picks” which of the other two values will come out. When it is true, it chooses the middle value, and when it is false, it chooses the value on the right.
@@ -47,8 +47,8 @@
 
     // A single let statement may define multiple bindings. The definitions must be separated by commas.
 
-    let one = 1, two = 2;
-    console.log(one + two);
+    let one = 1, two = 2
+    console.log(one + two)
     // → 3
 
 
@@ -56,31 +56,28 @@
 
     // In the simple case, we want some code to be executed if, and only if, a certain condition holds. We might, for example, want to show the square of the input only if the input is actually a number.
 
-    let theNumber = Number(prompt("Pick a number"));
+    let theNumber = Number(prompt("Pick a number"))
     if (!Number.isNaN(theNumber)) {
-    console.log("Your number is the square root of " +
-                theNumber * theNumber);
+        console.log("Your number is the square root of " + theNumber * theNumber)
     }
 
-
-
-    const prefersDarkMode = true;
+    const prefersDarkMode = true
 
     if (prefersDarkMode) {
-    console.log('dark mode set!');  
-    document.body.style.background = 'black';
+        console.log('dark mode set!')
+        document.body.style.background = 'black'
     }
 
-    console.log('light mode set!');
-    document.body.style.background = 'ghostwhite';
+    console.log('light mode set!')
+    document.body.style.background = 'ghostwhite'
 
 
 // looping control flow with while
 
-    let number = 0;
+    let number = 0
     while (number <= 12) {
-    console.log(number);
-    number = number + 2;
+        console.log(number)
+        number = number + 2
     }
     // → 0
     // → 2
