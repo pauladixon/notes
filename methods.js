@@ -5,17 +5,17 @@
     let stringPrac = String(prac)
 
     if (prac === stringPrac){
-    console.log(true)
+        console.log(true)
     } else console.log(false)
 
     // => false
 
     function zeroPad(number, width) {
-        let string = String(number);
+        let string = String(number)
         while (string.length < width) {
-          string = "0" + string;
+            string = "0" + string
         }
-        return string;
+        return string
     }
 
     zeroPad(4, 9)
@@ -32,7 +32,7 @@
     let test1 = 12
 
     if (isNaN(test1)){
-    console.log('yes')
+        console.log('yes')
     } else console.log('no')
     // → no
     
@@ -40,7 +40,7 @@
     let test2 = NaN
     
     if (!isNaN(test2)){
-    console.log('yes')
+        console.log('yes')
     } else console.log('no')
     // → yes
     
@@ -48,28 +48,28 @@
     let test3 = 12
     
     if (!Number.isNaN(test3)){
-    console.log('yes')
+        console.log('yes')
     } else console.log('no')
     // → yes
     
     
     
     function typeOfNaN(x) {
-    if (Number.isNaN(x)) {
-        return 'Number NaN';
-    }
-    if (isNaN(x)) {
-        return 'NaN';
-    } else return x
+        if (Number.isNaN(x)) {
+            return 'Number NaN'
+        }
+        if (isNaN(x)) {
+            return 'NaN'
+        } else return x
     }
     
-    console.log(typeOfNaN('100F'));
+    console.log(typeOfNaN('100F'))
     // → "NaN"
     
-    console.log(typeOfNaN(NaN));
+    console.log(typeOfNaN(NaN))
     // → "Number NaN"
     
-    console.log(typeOfNaN(12));
+    console.log(typeOfNaN(12))
     // → "12"
 
 
@@ -77,7 +77,7 @@
 
     // the function Math.max takes any amount of number arguments and gives back the greatest.
 
-    console.log(Math.max(2, 4));
+    console.log(Math.max(2, 4))
     // → 4
 
 
@@ -85,7 +85,7 @@
 
     // Here a call to Math.min, which is the opposite of Math.max, is used as part of a plus expression:
 
-    console.log(Math.min(2, 4) + 100);
+    console.log(Math.min(2, 4) + 100)
     // → 102
 
 
@@ -93,23 +93,23 @@
 
     // Both string and array values contain, in addition to the length property, a number of properties that hold function values.
 
-    let doh = "Doh";
-    console.log(typeof doh.toUpperCase);
+    let doh = "Doh"
+    console.log(typeof doh.toUpperCase)
     // → function
-    console.log(doh.toUpperCase());
+    console.log(doh.toUpperCase())
     // → DOH
 
 
 // push and pop
 
-    let sequence = [1, 2, 3];
-    sequence.push(4);
-    sequence.push(5);
-    console.log(sequence);
+    let sequence = [1, 2, 3]
+    sequence.push(4)
+    sequence.push(5)
+    console.log(sequence)
     // → [1, 2, 3, 4, 5]
-    console.log(sequence.pop());
+    console.log(sequence.pop())
     // → 5
-    console.log(sequence);
+    console.log(sequence)
     // → [1, 2, 3, 4]
 
     // The push method adds values to the end of an array, and the pop method does the opposite, removing the last value in the array and returning it.
@@ -121,15 +121,15 @@
 
     // The corresponding methods for adding and removing things at the start of an array are called unshift and shift.
 
-    let todoList = [];
+    let todoList = []
     function remember(task) {
-        todoList.push(task);
+        todoList.push(task)
     }
     function getTask() {
-        return todoList.shift();
+        return todoList.shift()
     }
     function rememberUrgently(task) {
-        todoList.unshift(task);
+        todoList.unshift(task)
     }
 
 
@@ -137,9 +137,9 @@
 
     // To search for a specific value, arrays provide an indexOf method. The method searches through the array from the start to the end and returns the index at which the requested value was found—or -1 if it wasn’t found. To search from the end instead of the start, there’s a similar method called lastIndexOf.
 
-    console.log([1, 2, 3, 2, 1].indexOf(2));
+    console.log([1, 2, 3, 2, 1].indexOf(2))
     // → 1
-    console.log([1, 2, 3, 2, 1].lastIndexOf(2));
+    console.log([1, 2, 3, 2, 1].lastIndexOf(2))
     // → 3
 
     // Both indexOf and lastIndexOf take an optional second argument that indicates where to start searching.
