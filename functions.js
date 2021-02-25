@@ -21,11 +21,11 @@
 
     const hummus = function(factor) {
         const ingredient = function(amount, unit, name) {
-        let ingredientAmount = amount * factor
-        if (ingredientAmount > 1) {
-            unit += "s"
-        }
-        console.log(`${ingredientAmount} ${unit} ${name}`)
+            let ingredientAmount = amount * factor
+            if (ingredientAmount > 1) {
+                unit += "s"
+            }
+            console.log(`${ingredientAmount} ${unit} ${name}`)
         }
         ingredient(1, "can", "chickpeas")
         ingredient(0.25, "cup", "tahini")
@@ -73,7 +73,7 @@
 
     // and the following produce the same function:
 
-    const square1 = (x) => { return x * x; }
+    const square1 = (x) => { return x * x }
     const square2 = x => x * x
 
     // looking at differences between:
@@ -170,8 +170,8 @@
 
         function convertTemperature(celsius, decimalPlaces = 1) {
             // celsius to fahrenheit
-            //   decimalPlaces = decimalPlaces || 1;
-            const fahrenheit = celsius * 1.8 + 32;
+            // decimalPlaces = decimalPlaces || 1
+            const fahrenheit = celsius * 1.8 + 32
             return Number(fahrenheit.toFixed(decimalPlaces))
         }
         
@@ -201,7 +201,7 @@
             return find(1, "1")
         }
 
-        console.log(findSolution(24));
+        console.log(findSolution(24))
         // → (((1 * 3) + 5) * 3)
 
     // Note that this program doesn’t necessarily find the shortest sequence of operations. It is satisfied when it finds any sequence at all.
