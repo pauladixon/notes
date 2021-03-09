@@ -197,6 +197,16 @@
             [true, true]  
         ])
 
+        const user = {
+            name: "john",
+            verified: true  
+        }
+          
+        new Map([
+            ["name", "john"],
+            ["verified", true]  
+        ])
+
     //  can add new keys with set:
 
         map1.set('key', 'value')
@@ -243,3 +253,23 @@
         
         const key = secretKeyMap.get(user1)
         console.log(key)
+
+    
+    // find the length of an an object - convert to array and count the keys
+            
+        const nums = {
+            1: 1,
+            true: true
+        }
+        
+        Object.keys(nums).length
+
+
+    // length of maps
+
+        const userMap = new Map([
+            ["name", "john"],
+            ["verified", true]  
+        ])
+        
+        console.log(userMap.size)
