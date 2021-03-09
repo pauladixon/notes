@@ -286,3 +286,5 @@
     }
     
     userData.getBio()
+
+    // arrow functions have a lexical scope so they do not lose the this binding when in layered parent functions. BUT if you use them with this in a normal object method the lexical scope will look out too far.
