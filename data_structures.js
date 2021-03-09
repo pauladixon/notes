@@ -233,3 +233,13 @@
             newMap.forEach((value, key) =>{
                 console.log(key, value)
             })
+
+    // use WeakMap for better file storage/memory when objects are keys
+
+        const secretKeyMap = new WeakMap([
+            [user1, secretKey1],
+            [user2, secretKey2]  
+        ])
+        
+        const key = secretKeyMap.get(user1)
+        console.log(key)
