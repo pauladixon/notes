@@ -215,3 +215,21 @@
             // 1,1
             // true,true
             // key,"value"
+
+        // example 2 
+
+            const user1 = { name: "john" }
+            const user2 = { name: "mary" }
+            
+            const secretKey1 = "asldjfalskdjf";
+            const secretKey2 = "alksdjfakjsdf";
+            
+            
+            const newMap = new Map([
+                [user1.name, secretKey1],
+                [user2.name, secretKey2]
+            ])
+            
+            newMap.forEach((value, key) =>{
+                console.log(key, value)
+            })
