@@ -433,3 +433,33 @@
             } else return fib(num-1) + fib(num-2)
         }
         
+
+    // tribonacci 
+
+        // The Tribonacci sequence Tn is defined as follows: 
+
+        // T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
+
+        // Given n, return the value of Tn.
+
+        var tribonacci = function(n) {
+            let var0 = 0
+            let var1 = 1
+            let var2 = 1
+            let sum
+            while (n > 2){
+                sum = var0 + var1 + var2
+                var0 = var1
+                var1 = var2
+                var2 = sum
+                n--
+            }
+            return sum
+        }
+        
+        let tribonacci = (n) => {
+            if (n===0) return 0
+            else if (n===1 || n===2) return 1
+            else return tribonacci(n-3) + tribonacci(n-2) + tribonacci(n-1)
+        }
+
