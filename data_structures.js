@@ -181,3 +181,18 @@
     const createdUser = { ...user, ...newUser, verified: false }
     console.log(createdUser)
         // => ›{name: "", username: "ReedBarger", phoneNumber: "", email: "reed@gmail.com", password: "mypassword", verified: false}
+
+
+// bringing in maps
+
+    // allows new types of key value pairs
+
+        const nums = {
+            1: 1,
+            true: true
+        }
+        
+        new Map([
+            [1, 1],
+            [true, true]  
+        ])
