@@ -192,7 +192,26 @@
             true: true
         }
         
-        new Map([
+        const map1 = new Map([
             [1, 1],
             [true, true]  
         ])
+
+    //  can add new keys with set:
+
+        map1.set('key', 'value')
+
+        console.log([...map1.keys()])
+            // => [1, true, "key"]
+
+    // these are ordered while objects are not
+
+    // forEach on maps:
+
+        map1.forEach((value, key) => {
+            console.log(key, value);  
+        })
+            // => 
+            // 1,1
+            // true,true
+            // key,"value"
