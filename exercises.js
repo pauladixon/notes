@@ -463,3 +463,16 @@
             else return tribonacci(n-3) + tribonacci(n-2) + tribonacci(n-1)
         }
 
+    // climbing stairs
+
+        // You are climbing a staircase. It takes n steps to reach the top.
+
+        // Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+        var climbStairs = function(n) {
+            if (n<=2){
+                return n
+            } else {
+                return climbStairs(n-1) + climbStairs(n-2)
+            }
+        }
