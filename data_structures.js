@@ -173,5 +173,11 @@
     }
     
     console.log(Object.assign({}, user, newUser, { verified: false }))
-    // => ›{name: "", username: "ReedBarger", phoneNumber: "", email: "reed@gmail.com", password: "mypassword", verified: false}
+        // => ›{name: "", username: "ReedBarger", phoneNumber: "", email: "reed@gmail.com", password: "mypassword", verified: false}
     
+
+// merge objects with object spread operator
+
+    const createdUser = { ...user, ...newUser, verified: false }
+    console.log(createdUser)
+        // => ›{name: "", username: "ReedBarger", phoneNumber: "", email: "reed@gmail.com", password: "mypassword", verified: false}
