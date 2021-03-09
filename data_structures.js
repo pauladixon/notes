@@ -154,3 +154,24 @@
     }
     
     displayUserBio(user)
+
+
+// merge objects with object assign 
+
+    const user = {
+        name: "",
+        username: "",
+        phoneNumber: "",
+        email: "",
+        password: ""  
+    }
+    
+    const newUser = {
+        username: "ReedBarger",
+        email: "reed@gmail.com",
+        password: "mypassword"  
+    }
+    
+    console.log(Object.assign({}, user, newUser, { verified: false }))
+    // => ›{name: "", username: "ReedBarger", phoneNumber: "", email: "reed@gmail.com", password: "mypassword", verified: false}
+    
