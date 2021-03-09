@@ -442,20 +442,24 @@
 
         // Given n, return the value of Tn.
 
-            var tribonacci = function(n) {
-                let var0 = 0
-                let var1 = 1
-                let var2 = 1
-                let sum
-                while (n > 2){
-                    sum = var0 + var1 + var2
-                    var0 = var1
-                    var1 = var2
-                    var2 = sum
-                    n--
+            // iterative solution
+
+                var tribonacci = function(n) {
+                    let var0 = 0
+                    let var1 = 1
+                    let var2 = 1
+                    let sum
+                    while (n > 2){
+                        sum = var0 + var1 + var2
+                        var0 = var1
+                        var1 = var2
+                        var2 = sum
+                        n--
+                    }
+                    return sum
                 }
-                return sum
-            }
+            
+            // recursive solution
             
             let tribonacci = (n) => {
                 if (n===0) return 0
