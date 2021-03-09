@@ -265,7 +265,7 @@
         Object.keys(nums).length
 
 
-    // length of maps
+    // length of maps is much easier
 
         const userMap = new Map([
             ["name", "john"],
@@ -273,3 +273,16 @@
         ])
         
         console.log(userMap.size)
+
+
+// applying this in objects
+
+    const userData = { 
+        username: "Reed",
+        title: "JavaScript Programmer",
+        getBio() {
+        console.log(`User ${this.username} is a ${this.title}`);
+        }  
+    }
+    
+    userData.getBio()
