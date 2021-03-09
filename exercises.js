@@ -442,26 +442,26 @@
 
         // Given n, return the value of Tn.
 
-        var tribonacci = function(n) {
-            let var0 = 0
-            let var1 = 1
-            let var2 = 1
-            let sum
-            while (n > 2){
-                sum = var0 + var1 + var2
-                var0 = var1
-                var1 = var2
-                var2 = sum
-                n--
+            var tribonacci = function(n) {
+                let var0 = 0
+                let var1 = 1
+                let var2 = 1
+                let sum
+                while (n > 2){
+                    sum = var0 + var1 + var2
+                    var0 = var1
+                    var1 = var2
+                    var2 = sum
+                    n--
+                }
+                return sum
             }
-            return sum
-        }
-        
-        let tribonacci = (n) => {
-            if (n===0) return 0
-            else if (n===1 || n===2) return 1
-            else return tribonacci(n-3) + tribonacci(n-2) + tribonacci(n-1)
-        }
+            
+            let tribonacci = (n) => {
+                if (n===0) return 0
+                else if (n===1 || n===2) return 1
+                else return tribonacci(n-3) + tribonacci(n-2) + tribonacci(n-1)
+            }
 
     // climbing stairs
 
