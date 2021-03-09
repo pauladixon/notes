@@ -135,4 +135,22 @@
     // Note that if you try to destructure null or undefined, you get an error, much as you would if you directly try to access a property of those values.
 
     
+// property access in parameters with destructuring
+
+    const user = {
+        name: "Reed",
+        username: "Reedbarger",
+        email: "reed@gmail.com",
+        details: {
+        title: "Programmer"  
+        }  
+    };
     
+    // const { title } = user.details
+    // const { name, details: { title} } = user;
+    
+    function displayUserBio({ name, details: { title} }) {
+        console.log(`${name} is a ${title}`); 
+    }
+    
+    displayUserBio(user);
