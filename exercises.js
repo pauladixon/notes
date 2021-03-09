@@ -400,4 +400,4 @@
           // → false
         console.log(deepEqual(obj, {here: {is: "an"}, object: 2}))
           // → true
-        
+    
