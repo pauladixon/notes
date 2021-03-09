@@ -401,3 +401,35 @@
         console.log(deepEqual(obj, {here: {is: "an"}, object: 2}))
           // → true
 
+
+// fibonacci sequence
+
+    // The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+
+        // F(0) = 0, F(1) = 1
+        // F(n) = F(n - 1) + F(n - 2), for n > 1.
+        // Given n, calculate F(n)
+
+    // iterative solution
+            
+        let fib = (num) => {
+            let var0 = 0
+            let var1 = 1
+            let sum
+            while (num > 1){
+                sum = var0 + var1
+                var0 = var1
+                var1 = sum
+                num --
+            }
+            return sum
+        }
+
+    // recursive solution
+
+        let fib = (num) => {
+            if (num <= 1){
+                return num
+            } else return fib(num-1) + fib(num-2)
+        }
+        
