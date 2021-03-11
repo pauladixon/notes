@@ -363,7 +363,7 @@
 
 // filter method for arrays
 
-    // mutates array, doesn't change the original
+    // mutates array and returns a subset array, doesn't change the original
 
         const restaurants = [
             { name: 'Cap City Diner', milesAway: 2.2 },
@@ -375,5 +375,18 @@
         
         const results = restaurants.filter(restaurant => restaurant.name.startsWith('C'))
         console.log(results)
+
+    
+// finds method on arrays
+
+    // returns just one element
+
+        const result = restaurants.find(restaurant => 
+            restaurant.name.toLowerCase().includes('north') && restaurant.milesAway < 2
+        )
+        console.log(result)
+        
+    
+// reduce method
 
     
