@@ -273,3 +273,24 @@
     // Multiplying the random number by 10 gives us a number greater than or equal to 0 and below 10. Since Math.floor rounds down, this expression will produce, with equal chance, any number from 0 through 9.
 
     // There are also the functions Math.ceil (for “ceiling”, which rounds up to a whole number), Math.round (to the nearest whole number), and Math.abs, which takes the absolute value of a number, meaning it negates negative values but leaves positive ones as they are.
+
+
+// some method on arrays
+
+    // takes a callback function
+
+        const temperatures = [
+            { degrees: 69, isRecordTemp: false }, 
+            { degrees: 82, isRecordTemp: true }, 
+            { degrees: 73, isRecordTemp: false }, 
+            { degrees: 64, isRecordTemp: false }
+        ];
+        
+        temperatures.some(temperature => temperature.isRecordTemp === true); // true / false
+
+    // vs low powered includes method
+
+        const temperatures = [69, 82, 73, 64];
+
+        console.log(temperatures.includes(50));
+        // => false
