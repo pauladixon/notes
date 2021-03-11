@@ -288,6 +288,12 @@
         
         temperatures.some(temperature => temperature.isRecordTemp === true); // true / false
 
+        // or 
+
+        const result = temperatures.some(temperature => temperature.isRecordTemp); // true / false
+        console.log(result)
+        // => true
+
     // vs low powered includes method
 
         const temperatures = [69, 82, 73, 64];
