@@ -332,6 +332,7 @@
             temperature.isRecordTemp = true
             return temperature
         })
+
         console.log(newTemps)
 
     // can also add new property to an array of objects 
@@ -340,4 +341,11 @@
             temperature.isHigh = true
             return temperature
         })
+
+        // or 
+
+        const newTemps = temperatures.map(temperature => 
+            temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
+        )
+
         console.log(newTemps)
