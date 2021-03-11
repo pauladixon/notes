@@ -315,3 +315,29 @@
             const result = temperatures.every(temperature => !temperature.isRecordTemp) // true / false
             console.log(result)
             // => true
+
+
+// map method
+
+    // mutates each element of an array using a callback function and creates a new array
+
+        const temperatures = [
+            { degrees: 69, isRecordTemp: false },
+            { degrees: 82, isRecordTemp: true },
+            { degrees: 73, isRecordTemp: false },
+            { degrees: 64, isRecordTemp: false }
+        ]
+        
+        const newTemps = temperatures.map(temperature => {
+            temperature.isRecordTemp = true
+            return temperature
+        })
+        console.log(newTemps)
+
+    // can also add new property to an array of objects 
+
+        const newTemps = temperatures.map(temperature => {
+            temperature.isHigh = true
+            return temperature
+        })
+        console.log(newTemps)
