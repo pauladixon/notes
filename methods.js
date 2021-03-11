@@ -275,28 +275,43 @@
     // There are also the functions Math.ceil (for “ceiling”, which rounds up to a whole number), Math.round (to the nearest whole number), and Math.abs, which takes the absolute value of a number, meaning it negates negative values but leaves positive ones as they are.
 
 
-// some method on arrays
+// some & every method on arrays
 
-    // takes a callback function
+    // both take a callback function
 
-        const temperatures = [
-            { degrees: 69, isRecordTemp: false }, 
-            { degrees: 82, isRecordTemp: true }, 
-            { degrees: 73, isRecordTemp: false }, 
-            { degrees: 64, isRecordTemp: false }
-        ];
+        // some checks to see if at least one element meets the condition
+
+            const temperatures = [
+                { degrees: 69, isRecordTemp: false }, 
+                { degrees: 82, isRecordTemp: true }, 
+                { degrees: 73, isRecordTemp: false }, 
+                { degrees: 64, isRecordTemp: false }
+            ]
+            
+            temperatures.some(temperature => temperature.isRecordTemp === true) // true / false
+
+            // or 
+
+            const result = temperatures.some(temperature => temperature.isRecordTemp) // true / false
+            console.log(result)
+            // => true
+
+        // vs low powered includes method
+
+            const temperatures = [69, 82, 73, 64]
+
+            console.log(temperatures.includes(50))
+            // => false
         
-        temperatures.some(temperature => temperature.isRecordTemp === true); // true / false
+        //  every checks to see if every element meets the condition
 
-        // or 
-
-        const result = temperatures.some(temperature => temperature.isRecordTemp); // true / false
-        console.log(result)
-        // => true
-
-    // vs low powered includes method
-
-        const temperatures = [69, 82, 73, 64];
-
-        console.log(temperatures.includes(50));
-        // => false
+            const temperatures = [
+                { degrees: 69, isRecordTemp: false }, 
+                { degrees: 82, isRecordTemp: false }, 
+                { degrees: 73, isRecordTemp: false }, 
+                { degrees: 64, isRecordTemp: false }
+            ]
+            
+            const result = temperatures.every(temperature => !temperature.isRecordTemp) // true / false
+            console.log(result)
+            // => true
