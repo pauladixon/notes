@@ -418,3 +418,19 @@
         }, [])
         
         console.log(x2)
+
+        // and
+
+        const greaterThan3 = numbers.reduce((acc, num) => {
+            if (num > 3) {
+                acc.push(num)
+            }
+            return acc
+        }, [])
+        
+        console.log(greaterThan3)
+
+        // or
+
+        const greaterNumbers = numbers.reduce((acc, num) => num > 3 ? acc.concat(num) : acc, [])
+        console.log(greaterNumbers)
