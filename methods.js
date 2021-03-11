@@ -389,22 +389,32 @@
     
 // reduce method
 
+    // most powerful of all array methods
     // always return the accumulator
 
-    const menuItems = [
-        { item: "Blue Cheese Salad", price: 8 },
-        { item: "Spicy Chicken Rigatoni", price: 18 },
-        { item: "Ponzu Glazed Salmon", price: 23 },
-        { item: "Philly Cheese Steak", price: 13 },
-        { item: "Baked Italian Chicken Sub", price: 12 },
-        { item: "Pan Seared Ribeye", price: 31 }
-    ]
+        const menuItems = [
+            { item: "Blue Cheese Salad", price: 8 },
+            { item: "Spicy Chicken Rigatoni", price: 18 },
+            { item: "Ponzu Glazed Salmon", price: 23 },
+            { item: "Philly Cheese Steak", price: 13 },
+            { item: "Baked Italian Chicken Sub", price: 12 },
+            { item: "Pan Seared Ribeye", price: 31 }
+        ]
+        
+        let result = menuItems.reduce((accumulator, menuItem) => {
+            accumulator = accumulator + menuItem.price
+            return accumulator
+        }, 0)
+        
+        console.log(result)
     
-    let result = menuItems.reduce((accumulator, menuItem) => {
-        accumulator = accumulator + menuItem.price
-        return accumulator
-    }, 0)
-    
-    console.log(result)
+    // accumulating to a new array
 
-    
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+        const x2 = numbers.reduce((acc, num) => {
+            acc.push(num*2)
+            return acc
+        }, [])
+        
+        console.log(x2)
