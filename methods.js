@@ -349,3 +349,14 @@
         )
 
         console.log(newTemps)
+
+    // adding in a forEach loop
+
+        temperatures.map(temperature => 
+            temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
+        ).forEach(temperature => {
+            if (temperature.isHigh) {
+                console.log(`Temperature ${temperature.degrees} was a record high last week!`);  
+            }
+        })
+           
