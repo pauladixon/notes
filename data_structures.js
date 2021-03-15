@@ -292,8 +292,33 @@
 
 // iterating over an object by turning it into an array
 
-    const obj = { one: 1, two: 2 };
+    // basic mod
 
-    for (const key in obj) {
-    console.log('value', obj[key]);
-    }
+        const obj = { one: 1, two: 2 };
+
+        for (const key in obj) {
+        console.log('value', obj[key]);
+        }
+
+
+    // object.keys() gives us an array of keys
+
+        // simple use
+
+            const user = {
+                name: 'John',
+                age: 29  
+            }
+            
+            console.log(Object.keys(user))
+            // -> ['name', 'age]
+            
+        // chaining on array methods
+
+            const ageExists = Object.keys(user).includes('age')
+            console.log(ageExists)
+            // -> true
+
+            const values = Object.keys(user).map(key => user[key])
+            console.log(values)
+            // -> ['john', 29]
