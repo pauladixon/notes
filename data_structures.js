@@ -322,3 +322,8 @@
             const values = Object.keys(user).map(key => user[key])
             console.log(values)
             // -> ['john', 29]
+
+    // object.values() gives us just the values of an object
+
+        console.log(Object.values(user))
+        // -> ['john', 29]
