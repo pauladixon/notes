@@ -427,6 +427,8 @@
 
         const numbers = [1, 2, 3, 4, 5, 6];
 
+
+
         const x2 = numbers.reduce((acc, num) => {
             acc.push(num*2)
             return acc
@@ -464,3 +466,20 @@
     ]
 
     const saladIndex = allMenuIdeas.findIndex(idea => idea === 'Harvest Salad')
+
+
+// prioritize readability in method choice
+
+    const numbers = [1, 2, 3, 4, 5];
+
+    for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+    }
+
+    // and
+
+    numbers.forEach(number => {
+    console.log(number);  
+    });
+
+    // produce the same result
