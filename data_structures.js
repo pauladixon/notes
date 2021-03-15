@@ -345,3 +345,10 @@
             
             console.log(sum)
             // => 2794
+
+    // object.entries() included both keys and values given in new array
+
+        console.log(Object.defineProperties(user))
+        // => [['name', 'john'], ['age', 29]]
+
+        
