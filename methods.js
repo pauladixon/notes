@@ -435,17 +435,17 @@
         const greaterNumbers = numbers.reduce((acc, num) => num > 3 ? acc.concat(num) : acc, [])
         console.log(greaterNumbers)
 
-        
+
 // find index
 
-    const breakfastMenuIdeas = ["Buckwheat Pancakes"];
-    const dinnerMenuIdeas = ["Glazed Salmon", "Meatloaf", "American Cheeseburger"];
+    const breakfastMenuIdeas = ["Buckwheat Pancakes"]
+    const dinnerMenuIdeas = ["Glazed Salmon", "Meatloaf", "American Cheeseburger"]
 
     const allMenuIdeas = [
         ...breakfastMenuIdeas, 
         "Harvest Salad", 
         "Southern Fried Chicken",
         ...dinnerMenuIdeas
-    ];
+    ]
 
-    const saladIndex = allMenuIdeas.findIndex(idea => idea === 'Harvest Salad');
+    const saladIndex = allMenuIdeas.findIndex(idea => idea === 'Harvest Salad')
