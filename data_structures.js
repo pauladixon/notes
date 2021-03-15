@@ -288,3 +288,12 @@
     userData.getBio()
 
     // arrow functions have a lexical scope so they do not lose the this binding when in layered parent functions. BUT if you use them with this in a normal object method the lexical scope will look out too far.
+
+
+// iterating over an object by turning it into an array
+
+    const obj = { one: 1, two: 2 };
+
+    for (const key in obj) {
+    console.log('value', obj[key]);
+    }
