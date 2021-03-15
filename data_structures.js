@@ -379,3 +379,23 @@
             // => [{name: "John", age: 29, id: "2345234"}, {name: "Jane", age: 42, id: "8798129"}]
 
           
+// Sets - each value can only occur once
+
+    const customerDishes = [
+        "Chicken Wings",
+        "Fish Sandwich",
+        "Beef Stroganoff",
+        "Grilled Cheese",
+        "Blue Cheese Salad",
+        "Chicken Wings",
+        "Reuben Sandwich",
+        "Grilled Cheese",
+        "Fish Sandwich",
+        "Chicken Pot Pie",
+        "Fish Sandwich",
+        "Beef Stroganoff"
+    ]
+
+    const unique = [...new Set(customerDishes)]
+    console.log(unique)
+    // => ["Chicken Wings", "Fish Sandwich", "Beef Stroganoff", "Grilled Cheese", "Blue Cheese Salad", "Reuben Sandwich", "Chicken Pot Pie"]
