@@ -327,3 +327,21 @@
 
         console.log(Object.values(user))
         // -> ['john', 29]
+
+        // chaining with reduce
+
+            const monthlyExpenses = {
+                food: 400,
+                rent: 1700,
+                insurance: 550,
+                internet: 49,
+                phone: 95  
+            };
+            
+            let sum = Object.values(monthlyExpenses).reduce((acc, num) => {
+                acc = acc + num
+                return acc
+            }, 0)
+            
+            console.log(sum)
+            // => 2794
